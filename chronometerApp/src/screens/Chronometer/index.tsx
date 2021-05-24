@@ -31,7 +31,6 @@ const Chronometer = () => {
 
 
   function handleSec() {
-    console.warn('sec');
     setClick(!click);
     const ref = setInterval(() => {
       setSec(sec => sec == 59 ? 0 : sec + 1)
@@ -41,7 +40,6 @@ const Chronometer = () => {
   }
 
   function handleMin() {
-    console.warn('min');
     setClick(!click);
     const ref = setInterval(() => {
       setMin(min => min == 59 ? 0 : min + 1)
@@ -51,7 +49,6 @@ const Chronometer = () => {
   }
 
   function handleHour() {
-    console.warn('hour');
     setClick(!click);
     const ref = setInterval(() => {
       setHour(hour => hour + 1)
